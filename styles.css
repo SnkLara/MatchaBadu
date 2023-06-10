@@ -41,13 +41,21 @@ background-color: #025157;
 
 
 }
-
+.fixed-header
+{position: fixed;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  background-color: #fffbf7;
+}
 
 .conteiner-header >* {
     display: inline-block;
     font-size: 16px;
     line-height: 45px;
-    vertical-align:middle;
+    vertical-align: middle;
+    height: 100%;
+
 }
 
 li{ 
@@ -60,16 +68,12 @@ li{
     width: 15%;
   }
   
-  .navbar {
+  .Nav {
     width: 60%;
     text-align:center;
     color: #025157;
     font-weight: 500;
-    display: flex;
-    align-items: center;
-
-
-  }
+    }
   
   .actions {
     width: 15%;
@@ -77,3 +81,62 @@ li{
     font-size:14px;
     font-weight: 600;
   }
+  .main{
+    margin-top: 285px;
+    text-align: center;
+  }
+  .promo
+  {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+  
+  }
+  .explanatory-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .explanatory-video img {
+    width: 29px;
+    margin-top: 10px;
+  }
+
+  .publish h3 {
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+  }
+  .publish> p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20;
+  }
+  .publish > form{ 
+    display: flex;
+  }
+    .publish > form p {
+      color: #025157;
+      margin-right: 18px;
+    
+    }
+
+    .features{
+      display: grid;
+     /** grid-template-columns: repeat(4, 300px); **/
+      grid-template-columns: repeat(3, 1fr) ;
+    
+
+    }
+    .features > article{
+      width: 300px;
+      height: 300px;
+      border-radius: 12px;
+      background-color: rgb(10, 106, 12);
+    }
+
+  
